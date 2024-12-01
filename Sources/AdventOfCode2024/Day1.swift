@@ -5,10 +5,16 @@
 //  Created by Matt Dailey on 12/1/24.
 //
 
+import AdventOfCodeShared
 import ArgumentParser
+import Foundation
 
-struct Day1: AsyncParsableCommand {
+struct Day1: AdventOfCodeDay {
   static let configuration = CommandConfiguration(abstract: "Advent of Code - December 01, 2024")
+  
+  var inputPath: String? {
+    Bundle.module.path(forResource: "Day1", ofType: ".txt")
+  }
                                                   
   func part1(input: String) throws -> String {
     let lists = lists(input: input)
@@ -63,7 +69,7 @@ struct Day1: AsyncParsableCommand {
   }
   
   mutating func run() async throws {
-    print("Part 1: \(try part1(input: ""))")
-    print("Part 2: \(try part2(input: ""))")
+    print("Part 1: \(try part1(input: input))")
+    print("Part 2: \(try part2(input: input))")
   }
 }
