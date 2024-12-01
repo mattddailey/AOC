@@ -10,7 +10,7 @@ import ArgumentParser
 import Foundation
 
 struct Day2: AdventOfCodeDay {
-  static let configuration = CommandConfiguration(abstract: "Advent of Code - December 02, 2024")
+  static let configuration = CommandConfiguration(abstract: "Advent of Code - December 02, 2024: Historian Hysteria")
   
   var inputPath: String? {
     Bundle.module.path(forResource: "Day2", ofType: ".txt")
