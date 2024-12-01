@@ -1,1 +1,1 @@
-A new repo for AdventOfCode 2024, and potentially future years
+A new repo for Advent Of Code 2024 and beyond
